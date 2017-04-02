@@ -23,7 +23,9 @@ public class Run {
     private static int x;
     private static int y;
     
-    
+    /**
+     * creates a scanner and reads in user input
+     */
     public static void reader(){
         Scanner scanner = new Scanner(System.in);
         while(!scanner.hasNextInt()){
