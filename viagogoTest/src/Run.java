@@ -34,7 +34,6 @@ public class Run {
         }
         x = scanner.nextInt();
         y = scanner.nextInt();
-        
     }
     
     /**
@@ -63,6 +62,7 @@ public class Run {
         int numberOfEvents = rand.nextInt(10) + 1;
         //used to set the maximum number of ticket types an event can have
         int numberOfTickets;
+        
         //create the array of event, where for each event there is an array of tickets.
         for(int i = 0; i < numberOfEvents; i++){
             ArrayList<Ticket> tickets = new ArrayList<>();

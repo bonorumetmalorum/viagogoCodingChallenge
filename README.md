@@ -1,14 +1,14 @@
-##viagogo Intern/Graduate Developer Test##
+<h1>viagogo Intern/Graduate Developer Test</h1>
 
 
-#Requirements
+<h3>Requirements</h3>
 
 - Code in any language you like but please provide clear instructions on how we should build & run your code
 - Please use any source control system you like, and send us a link (or if you prefer just a zip of your project)
 - The first requirement is your code meets the requirements
 - Secondary requirements are whether your code is idiomatic for the language being coded in, easy to read, and clearly laid out
 
-# Scenario
+<h3>Scenario</h3>
 
 - Your program should randomly generate seed data
 - Your program should operate in a world that ranges from -10 to +10 (Y axis), and -10 to +10 (X axis)
@@ -18,7 +18,7 @@
 - Each ticket has a non-zero price, expressed in US Dollars
 - The distance between two points should be computed as the Manhattan distance
 
-# Instructions
+<h3>Instructions</h3>
 
 - You are required to write a program which accepts a user location as a pair of co-ordinates, and returns a list of the five closest events, along with the cheapest ticket price for each event
 - Please detail any assumptions you have made
@@ -35,7 +35,7 @@
 o	Efficient since events would be concentrated around certain areas and sparse around others.
 o	Commonly used in geolocation applications
 
-# Example Program Run
+<h3>Example Program Run</h3>
 
 Please Input Coordinates:
 
@@ -47,7 +47,7 @@ Event 003 - $30.29, Distance 3
 Event 001 - $35.20, Distance 5
 Event 006 - $01.40, Distance 12
 
-# Run Instructions
+<h3>Run Instructions</h3>
 
 To compile all code, open command prompt in "src" directory and do Javac *.java
 To run the program, after  compiling, do java run.class
