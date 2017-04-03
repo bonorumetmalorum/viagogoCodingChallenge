@@ -21,17 +21,17 @@
 
 - You are required to write a program which accepts a user location as a pair of co-ordinates, and returns a list of the five closest events, along with the cheapest ticket price for each event
 - Please detail any assumptions you have made
-..*Random generator (with random seed) is used to generate events (and their locations), ticket price, number of tickets.
-..*Maximum ticket price is 100 and minimum ticket price is 10 (simple solution to fix negative numbers being generated from the number generator)
-..*Maximum number of events will be 10 to get better spread of distances
-..*If there are no tickets for sale, then an appropriate message will be printed
+..* Random generator (with random seed) is used to generate events (and their locations), ticket price, number of tickets.
+..* Maximum ticket price is 100 and minimum ticket price is 10 (simple solution to fix negative numbers being generated from the number generator)
+..* Maximum number of events will be 10 to get better spread of distances
+..* If there are no tickets for sale, then an appropriate message will be printed
 - How might you change your program if you needed to support multiple events at the same location?
-..*Make a venue class that would handle the locations maintaining a list of events.
+..* Make a venue class that would handle the locations maintaining a list of events.
 - How would you change your program if you were working with a much larger world size?
-..*Making it possible to search by location, this would be done using a hashmap or hashtable depending on the implementation and requirements, threaded or non-threaded. The location of the user and the events would be available in the form of geographical coordinates and these would be used to find the events closest to the user.
-..*Using a data structure such as Quadtrees to divide the space into quadrants, improving efficiency in searching for neighbouring events with user location.
-..*Efficient since events would be concentrated around certain areas and sparse around others.
-..*Commonly used in geolocation applications
+..* Making it possible to search by location, this would be done using a hashmap or hashtable depending on the implementation and requirements, threaded or non-threaded. The location of the user and the events would be available in the form of geographical coordinates and these would be used to find the events closest to the user.
+..* Using a data structure such as Quadtrees to divide the space into quadrants, improving efficiency in searching for neighbouring events with user location.
+..* Efficient since events would be concentrated around certain areas and sparse around others.
+..* Commonly used in geolocation applications
 
 ### Example Program Run
 
