@@ -19,19 +19,19 @@ public class Event{
     private int x;
     private int y;
     private ArrayList<Ticket> tickets;
-    private final int ID;
+    private final int iD;
     
     /**
      * The event 
      * @param x x coordinate of the event
      * @param y y coordinate of the event
-     * @param ID Unique ID of the event
+     * @param ID Unique iD of the event
      * @param tickets Arraylist of tickets being sold at the event
      */
     public Event(int x, int y, int ID, ArrayList<Ticket> tickets){
         this.x = x;
         this.y = y;
-        this.ID = ID;
+        this.iD = ID;
         this.tickets = tickets;
     }
     
@@ -71,10 +71,10 @@ public class Event{
     }
     
     /**
-     * The ID of this event
-     * @return int ID of event
+     * The iD of this event
+     * @return int iD of event
      */
     public int getID(){
-        return ID;
+        return iD;
     }
 }
