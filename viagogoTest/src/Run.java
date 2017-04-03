@@ -54,7 +54,7 @@ public class Run {
                 grid.userCoordinates(x, y);
                 valid = true;
             }catch(IndexOutOfBoundsException e){
-                reader();
+                System.out.println(e.getMessage());
                 valid = false;
             }
         }
