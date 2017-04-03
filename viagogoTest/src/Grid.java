@@ -66,10 +66,10 @@ public class Grid {
                 Integer b = manhattanDistance(o2);
                 return a.compareTo(b);
             });
-            if(events.size() <=5 ){
+            if(events.size() <= searchLimit ){
                 closestEvents = events;
             }else{
-            closestEvents = events.subList(0, 5);
+            closestEvents = events.subList(0, searchLimit);
             }
         }
         return closestEvents;
