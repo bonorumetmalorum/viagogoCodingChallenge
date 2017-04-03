@@ -14,11 +14,9 @@ import java.text.DecimalFormat;
 public class Ticket{
 
     private double price;
-    private int numberOfTickets;
     private DecimalFormat decFormat = new DecimalFormat("##.##");
 
-    public Ticket(Double price, int quantity){
-        numberOfTickets = quantity;
+    public Ticket(Double price){
         decFormat = new DecimalFormat("#00.##");
         this.price = Double.parseDouble(decFormat.format(price));
 
@@ -29,12 +27,5 @@ public class Ticket{
      */
     public Double getPrice(){
         return price;
-    }
-    /**
-     * get the number of available tickets for sale of this type
-     * @return int number of tickets
-     */
-    public int getNumberOfTickets(){
-        return numberOfTickets;
     }
 }

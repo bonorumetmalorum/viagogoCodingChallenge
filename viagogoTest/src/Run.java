@@ -59,16 +59,16 @@ public class Run {
             }
         }
         
-        //setting the upp bound on the number of events in the graph, a minimum of 10.
-        int numberOfEvents = rand.nextInt(100) + 5;
-        //used to set the maximum number of ticket types an event can have, minimum 1 (for each event)
+        //setting the upper bound on the number of events in the graph.
+        int numberOfEvents = rand.nextInt(10) + 1;
+        //used to set the maximum number of ticket types an event can have
         int numberOfTickets;
         //create the array of event, where for each event there is an array of tickets.
         for(int i = 0; i < numberOfEvents; i++){
             ArrayList<Ticket> tickets = new ArrayList<>();
             numberOfTickets = rand.nextInt(100);
             for(int j = 0; j < numberOfTickets; j++){
-                tickets.add(new Ticket((rand.nextDouble() + rand.nextInt(100)), rand.nextInt()));
+                tickets.add(new Ticket((rand.nextDouble() + rand.nextInt(100))));
             }
             events.add(new Event(rand.nextInt(20) -10, rand.nextInt(20) -10, i, tickets));
         }

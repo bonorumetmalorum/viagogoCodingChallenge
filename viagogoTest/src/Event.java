@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import javax.management.RuntimeErrorException;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -38,9 +39,12 @@ public class Event{
      * sorts the tickets by cheapest price first and returns the cheapest price
      * @return a float value of the cheapest ticket price
      */
-    public Double getCheapestTicket(){
-        Collections.sort(tickets, (Ticket o1, Ticket o2) -> o1.getPrice().compareTo(o2.getPrice()));
-        return tickets.get(0).getPrice();
+    public Double getCheapestTicket() throws RuntimeException{
+        if(tickets.size() != 0){
+            Collections.sort(tickets, (Ticket o1, Ticket o2) -> o1.getPrice().compareTo(o2.getPrice()));
+            return tickets.get(0).getPrice();
+        }
+        return null;
     }
     /**
      * gives the events current ticket list, ordered or unordered
