@@ -66,7 +66,7 @@ public class Run {
         //create the array of event, where for each event there is an array of tickets.
         for(int i = 0; i < numberOfEvents; i++){
             ArrayList<Ticket> tickets = new ArrayList<>();
-            numberOfTickets = rand.nextInt(10) + 1;
+            numberOfTickets = rand.nextInt(100);
             for(int j = 0; j < numberOfTickets; j++){
                 tickets.add(new Ticket((rand.nextDouble() + rand.nextInt(100)), rand.nextInt()));
             }
@@ -76,8 +76,12 @@ public class Run {
         List<Event>closest = grid.getClosestEvent();
         //print out the closest events
         for(Event e : closest){
-            System.out.println("Event: " + e.getID() + " - $" + e.getCheapestTicket() + ", Distance " + grid.manhattanDistance(e));
+            Double cheapestTicket = e.getCheapestTicket();
+            if(cheapestTicket == null){
+                System.out.println("Event: " + e.getID() + " - no tickets available" + ", Distance " + grid.manhattanDistance(e));
+            }else{
+                System.out.println("Event: " + e.getID() + " - $" + e.getCheapestTicket() + ", Distance " + grid.manhattanDistance(e));
+            }
         }
     }
-    
 }
